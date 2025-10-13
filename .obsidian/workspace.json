@@ -1,0 +1,218 @@
+{
+  "main": {
+    "id": "d91186922552d002",
+    "type": "split",
+    "children": [
+      {
+        "id": "76042825501e0db2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "93eca80c5c6a9418",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "학습노트/00. 계획/트래커.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "트래커"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "da891d11f0ccb5b1",
+    "type": "split",
+    "children": [
+      {
+        "id": "2ec6748c65d783e1",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "0b98647615933a14",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "파일 탐색기"
+            }
+          },
+          {
+            "id": "35d004d131aa31c6",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "b52d62671338c601",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "fff97cab387fb129",
+    "type": "split",
+    "children": [
+      {
+        "id": "3f51042e59803d08",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2783ca15991965b8",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "학습노트/00. 계획/트래커.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "트래커 의 백링크"
+            }
+          },
+          {
+            "id": "ed5d924d12812774",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "학습노트/00. 계획/트래커.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "트래커 의 나가는 링크"
+            }
+          },
+          {
+            "id": "a77253af1bca7608",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "088a0a3abc362b33",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "a9a790b9723da3c3",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
+            }
+          }
+        ],
+        "currentTab": 4
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:빠른 전환기 열기": false,
+      "graph:그래프 뷰 열기": false,
+      "canvas:새 캔버스 만들기": false,
+      "daily-notes:오늘의 일일 노트 열기": false,
+      "templates:템플릿 삽입": false,
+      "command-palette:명령어 팔레트 열기": false,
+      "bases:새 베이스 생성하기": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "93eca80c5c6a9418",
+  "lastOpenFiles": [
+    "학습노트/00. 계획/6개월 계획.md",
+    "학습노트/00. 계획/트래커.md",
+    "학습노트/10. 주차별 진행/1 주차.md",
+    "Templates/week_template.md.md",
+    "Templates/tracker_template.md.md",
+    "학습노트/1 주차.md",
+    "학습노트/10. 주차별 진행",
+    "학습노트/00. 계획/무제",
+    "학습노트/00. 계획",
+    "학습노트/3 주차.md",
+    "학습노트/2 주차.md",
+    "학습노트/4 주차.md",
+    "학습노트",
+    "Templates/generate_24weeks.md.md",
+    "Week Notes.md",
+    "[object Promise].md",
+    "[object Promise] 23.md",
+    "[object Promise] 22.md",
+    "[object Promise] 21.md",
+    "[object Promise] 20.md",
+    "[object Promise] 19.md",
+    "[object Promise] 18.md",
+    "[object Promise] 17.md",
+    "[object Promise] 16.md",
+    "[object Promise] 15.md",
+    "[object Promise] 14.md",
+    "[object Promise] 13.md",
+    "[object Promise] 12.md",
+    "[object Promise] 11.md",
+    "[object Promise] 10.md",
+    "Week Notes",
+    "Templates"
+  ]
+}
