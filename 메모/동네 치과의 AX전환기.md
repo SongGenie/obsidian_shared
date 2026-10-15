@@ -1,3 +1,9 @@
+---
+title: 동네 치과의 AX전환기
+created: 2026-10-15
+status: 정리
+tags: [메모, LocalAI, AIAgent, AX, 업무자동화, 온프레미스]
+---
 
 - **링크:** [https://arca.live/b/aihomelab/185810092?p=1](https://arca.live/b/aihomelab/185810092?p=1)   
 - **출처:** 아카라이브 AI 로컬 홈랩

@@ -1,3 +1,9 @@
+---
+title: Lost Cat - 인터랙티브 입체 만화
+created: 2026-10-15
+status: 정리
+tags: [메모, 인터랙티브만화, WebComic, 3D, AI콘텐츠]
+---
 
 - **링크:** [https://eternityspring.github.io/ai-explorations/lost-cat-comic/](https://eternityspring.github.io/ai-explorations/lost-cat-comic/)
 - **제목:** 寻猫 Lost Cat

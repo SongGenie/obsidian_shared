@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GE_Agents/00_GE_Agent_프로젝트_목록.md",
+                "file": "GE_Agents/01_주간_보고_자동화.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "00_GE_Agent_프로젝트_목록"
+              "title": "01_주간_보고_자동화"
             }
           }
         ]
@@ -182,22 +182,27 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "a66af96e8ca04b0e",
+  "active": "0b98647615933a14",
   "lastOpenFiles": [
-    "Google Cloud/Gemini Enterprise App.md",
+    "GE_Agents/Status_Tag_작성_규칙.md",
+    "규칙/Tag.md",
+    "규칙/Status.md",
+    "규칙/옵시디언 작성 규칙.md",
+    "규칙",
+    "GE_Agents/01_주간_보고_자동화.md",
+    "메모/Lost Cat - 인터랙티브 입체 만화.md",
     "GE_Agents/04_원노트_Gemini_검색.md",
     "GE_Agents/03_기차_조회_및_예약.md",
-    "GE_Agents/02_신기술_자료_정리.md",
-    "GE_Agents/01_주간_보고_자동화.md",
     "GE_Agents/00_GE_Agent_프로젝트_목록.md",
+    "메모/동네 치과의 AX전환기.md",
+    "GE_Agents/02_신기술_자료_정리.md",
+    "Google Cloud/Gemini Enterprise App.md",
     "GE_Agents",
     "Google Cloud/1. 주간업무보고 자동화.md",
     "Google Cloud/4. 원노트 Knowledge Agent.md",
     "Google Cloud/3. KTX 기차 조회.md",
     "Google Cloud/2. 신기술 자료정리.md",
     "Google Cloud",
-    "메모/Lost Cat - 인터랙티브 입체 만화.md",
-    "메모/동네 치과의 AX전환기.md",
     "메모",
     "BEMS 토이프로젝트/BEMS 상세 로드맵.md",
     "Unity-Python API/DiffusionLightTurbo/UNITY_INTEGRATION_GUIDE.md",
@@ -210,15 +215,10 @@
     "학습노트/00. 계획/트래커.md",
     "학습노트/00. 계획/6개월 계획.md",
     "학습노트/10. 주차별 진행/요약정리/11.03 AI 에디터 환경 세팅 및 성능 테스트 요약.md",
-    "학습노트/10. 주차별 진행/요약정리/11.02 Figma make (AI).md",
-    "학습노트/10. 주차별 진행/요약정리/11.01 AI 바이브코딩 툴 비교.md",
-    "Unity-Python API/DiffusionLightTurbo/UNITY_SERVER_INTEGRATION_PLAN.md",
     "Unity-Python API/DiffusionLightTurbo",
     "Unity-Python API",
     "학습노트/10. 주차별 진행/요약정리",
-    "학습노트/1 주차.md",
     "학습노트/10. 주차별 진행",
-    "학습노트/00. 계획/무제",
-    "학습노트/00. 계획"
+    "학습노트/00. 계획/무제"
   ]
 }
