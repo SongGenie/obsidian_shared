@@ -2,7 +2,7 @@
 title: GE Agent 프로젝트 목록
 created: 2026-10-15
 status: 기획
-tags: [GE, GeminiEnterprise, Agent]
+tags: [GE, Agent, 프로젝트]
 ---
 
 # GE Agent 프로젝트 목록
@@ -62,6 +62,7 @@ Gemini Enterprise(GE)에서 사용할 네 가지 에이전트의 구축 기획�
 - [커스텀 MCP 연결](https://docs.cloud.google.com/gemini/enterprise/docs/connectors/custom-mcp-server/set-up-custom-mcp-server)
 
 > 커스텀 MCP 액션은 기본적으로 사용자 확인을 요구할 수 있다. 조회 도구는 실제 읽기 전용일 때만 readOnlyHint를 사용한다. 메일 발송·예약 같은 쓰기 기능의 무인 실행 가능 여부는 선택한 실행 경로에서 별도 검증한다.
+
 
 
 

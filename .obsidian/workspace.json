@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "GE_Agents/01_주간_보고_자동화/01_검증.md",
+                "file": "GE_Agents/01_주간_보고_자동화/00_기획.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "01_검증"
+              "title": "00_기획"
             }
           }
         ]
@@ -182,14 +182,17 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "912ad5e4af9645ba",
+  "active": "a9a790b9723da3c3",
   "lastOpenFiles": [
+    "메모/Lost Cat - 인터랙티브 입체 만화.md",
+    "규칙/Tag.md",
+    "규칙/Status.md",
+    "GE_Agents/01_주간_보고_자동화/01_검증.md",
+    "GE_Agents/01_주간_보고_자동화/02_POC.md",
     "GE_Agents/01_주간_보고_자동화/001_주간_보고_자동화_검증.md",
     "GE_Agents/04_원노트_Gemini_검색/00_기획.md",
     "GE_Agents/03_기차_조회_및_예약/00_기획.md",
     "GE_Agents/02_신기술_자료_정리/00_기획.md",
-    "GE_Agents/01_주간_보고_자동화/02_POC.md",
-    "GE_Agents/01_주간_보고_자동화/01_검증.md",
     "GE_Agents/01_주간_보고_자동화/00_기획.md",
     "GE_Agents/01_주간_보고_자동화/01_주간_보고_자동화.md",
     "GE_Agents/01_주간_보고_자동화/002_주간_보고_자동화_POC.md",
@@ -205,13 +208,10 @@
     "GE_Agents/002_주간_보고_자동화_POC.md",
     "GE_Agents/무제",
     "GE_Agents/0011_주간_보고_자동화_검증2.md",
-    "규칙/Status.md",
     "규칙/옵시디언 작성 규칙.md",
     "GE_Agents/00_GE_Agent_프로젝트_목록.md",
-    "규칙/Tag.md",
     "GE_Agents/Status_Tag_작성_규칙.md",
     "규칙",
-    "메모/Lost Cat - 인터랙티브 입체 만화.md",
     "GE_Agents/04_원노트_Gemini_검색.md",
     "GE_Agents/03_기차_조회_및_예약.md",
     "메모/동네 치과의 AX전환기.md",
