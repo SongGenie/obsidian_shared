@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "학습노트/10. 주차별 진행/1 주차.md",
+                "file": "메모.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "1 주차"
+              "title": "메모"
             }
           }
         ]
@@ -182,19 +182,24 @@
   },
   "active": "a66af96e8ca04b0e",
   "lastOpenFiles": [
-    "학습노트/10. 주차별 진행/요약정리/11.02 Figma make (AI).md",
-    "학습노트/10. 주차별 진행/요약정리/11.01 AI 바이브코딩 툴 비교.md",
-    "학습노트/10. 주차별 진행/1 주차.md",
+    "메모.md",
+    "BEMS 토이프로젝트/BEMS 상세 로드맵.md",
     "Unity-Python API/DiffusionLightTurbo/UNITY_INTEGRATION_GUIDE.md",
     "Unity-Python API/DiffusionLightTurbo/README_UNITY_SERVER.md",
+    "Templates/week_template.md.md",
+    "Templates/tracker_template.md.md",
+    "BEMS 토이프로젝트/BEMS 상세 로드맵 1.md",
+    "학습노트/10. 주차별 진행/1 주차.md",
+    "BEMS 토이프로젝트",
+    "학습노트/00. 계획/트래커.md",
+    "학습노트/00. 계획/6개월 계획.md",
+    "학습노트/10. 주차별 진행/요약정리/11.03 AI 에디터 환경 세팅 및 성능 테스트 요약.md",
+    "학습노트/10. 주차별 진행/요약정리/11.02 Figma make (AI).md",
+    "학습노트/10. 주차별 진행/요약정리/11.01 AI 바이브코딩 툴 비교.md",
     "Unity-Python API/DiffusionLightTurbo/UNITY_SERVER_INTEGRATION_PLAN.md",
     "Unity-Python API/DiffusionLightTurbo",
     "Unity-Python API",
     "학습노트/10. 주차별 진행/요약정리",
-    "학습노트/00. 계획/트래커.md",
-    "학습노트/00. 계획/6개월 계획.md",
-    "Templates/week_template.md.md",
-    "Templates/tracker_template.md.md",
     "학습노트/1 주차.md",
     "학습노트/10. 주차별 진행",
     "학습노트/00. 계획/무제",
@@ -211,10 +216,6 @@
     "[object Promise] 21.md",
     "[object Promise] 20.md",
     "[object Promise] 19.md",
-    "[object Promise] 18.md",
-    "[object Promise] 17.md",
-    "[object Promise] 16.md",
-    "[object Promise] 15.md",
     "Week Notes",
     "Templates"
   ]
