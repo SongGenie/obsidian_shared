@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "메모.md",
+                "file": "메모/Lost Cat - 인터랙티브 입체 만화.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "메모"
+              "title": "Lost Cat - 인터랙티브 입체 만화"
             }
           }
         ]
@@ -182,7 +182,9 @@
   },
   "active": "a66af96e8ca04b0e",
   "lastOpenFiles": [
-    "메모.md",
+    "메모/동네 치과의 AX전환기.md",
+    "메모/Lost Cat - 인터랙티브 입체 만화.md",
+    "메모",
     "BEMS 토이프로젝트/BEMS 상세 로드맵.md",
     "Unity-Python API/DiffusionLightTurbo/UNITY_INTEGRATION_GUIDE.md",
     "Unity-Python API/DiffusionLightTurbo/README_UNITY_SERVER.md",
@@ -215,8 +217,6 @@
     "[object Promise] 22.md",
     "[object Promise] 21.md",
     "[object Promise] 20.md",
-    "[object Promise] 19.md",
-    "Week Notes",
-    "Templates"
+    "Week Notes"
   ]
 }
