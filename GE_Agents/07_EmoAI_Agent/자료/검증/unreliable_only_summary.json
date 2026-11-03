@@ -1,0 +1,82 @@
+{
+  "attention_summary": {
+    "gaze_valid_ratio": 0.0,
+    "level": "low",
+    "mean": 0.0,
+    "screen_gaze_ratio": 0.0,
+    "trend": {
+      "delta": 0.0,
+      "label": "stable"
+    }
+  },
+  "au_mean": {},
+  "au_peak": {},
+  "dominant_timeline": [],
+  "duration_sec": 0.0,
+  "emotion_distribution": {},
+  "engagement_summary": {
+    "level": "low",
+    "mean": 0.0,
+    "trend": {
+      "delta": 0.0,
+      "label": "stable"
+    }
+  },
+  "event_counts": {
+    "brow_raise": 0,
+    "duchenne_smile": 0,
+    "emotion_switches": 0,
+    "gaze_away": 0,
+    "social_smile": 0,
+    "tension_spike": 0
+  },
+  "face_detected_ratio": 1.0,
+  "frames_collected": 1,
+  "gaze": {
+    "angle_std_deg": 0.0
+  },
+  "head_movement": {
+    "position_std_mm": 0.0,
+    "rotation_std_deg": 0.0
+  },
+  "interest_summary": {
+    "brow_raise_mean": 0.0,
+    "leaning_mean": 0.0,
+    "level": "low",
+    "mean": 0.0,
+    "trend": {
+      "delta": 0.0,
+      "label": "stable"
+    }
+  },
+  "prompt_state": {
+    "arousal": 0.0,
+    "attention_level": "low",
+    "confidence": "insufficient",
+    "emotion_state": "차분하고 중립적",
+    "engagement_level": "low",
+    "interest_level": "low",
+    "tension_level": "low",
+    "valence": 0.0
+  },
+  "reliable_face_ratio": 0.0,
+  "signal_summary": {
+    "brow_raise_events": 0,
+    "duchenne_smile_events": 0,
+    "negative_ratio": 0.0,
+    "positive_ratio": 0.0,
+    "smile_mean": 0.0,
+    "social_smile_events": 0
+  },
+  "speech": [],
+  "speech_count": 0,
+  "tension_summary": {
+    "level": "low",
+    "mean": 0.0,
+    "trend": {
+      "delta": 0.0,
+      "label": "stable"
+    }
+  },
+  "undetected_spans": []
+}

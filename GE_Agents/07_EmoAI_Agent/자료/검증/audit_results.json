@@ -1,0 +1,39 @@
+{
+  "scope": "evidence consistency only, not end-to-end validation",
+  "checks": [
+    {
+      "check": "evidence sources unchanged",
+      "pass": true
+    },
+    {
+      "check": "three existing offline modes exited zero",
+      "pass": true
+    },
+    {
+      "check": "24 aggregation behavior checks recorded",
+      "pass": true
+    },
+    {
+      "check": "local model produced seven finite outputs",
+      "pass": true
+    },
+    {
+      "check": "model file unchanged",
+      "pass": true
+    },
+    {
+      "check": "source prompt copy unchanged",
+      "pass": true
+    },
+    {
+      "check": "missing-data defect documented by output",
+      "pass": true
+    },
+    {
+      "check": "illustrative CPU cost arithmetic",
+      "pass": true
+    }
+  ],
+  "passed": 8,
+  "failed": 0
+}

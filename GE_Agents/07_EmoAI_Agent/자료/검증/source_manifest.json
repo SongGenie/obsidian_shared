@@ -1,0 +1,78 @@
+[
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\analysis_session.cpp",
+    "sha256": "190ef941a8a5667368989bb20b46ac51f85a951a2ea3fadc36eb4aae7f2c899f"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\analysis_session.h",
+    "sha256": "85d2f1f09038b3ef6005bbf7a3cd1ec7c8598e9756a24f845107013a05004239"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\affect_analyzer.h",
+    "sha256": "8b6455cdad05582554fabb23f17672bf62858888cbeb07e362b08e5274884717"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\emotion_fusion.h",
+    "sha256": "4b8049abd134c7aae22827cbac36796dcbe447772c42f96fcbc11510bbadb29d"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\face_pipeline.h",
+    "sha256": "ec58d4f2a3e36ffee474d281e04f7f4c1ea82b525268b1cff0ceee9ec5baa0c3"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\emotion_classifier.h",
+    "sha256": "cdee3bd6ec4805668e545a8949efde1dfb745f7d74212d6918b87513495b5630"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\include\\third_party\\json.hpp",
+    "sha256": "9bea4c8066ef4a1c206b2be5a36302f8926f7fdc6087af5d20b417d0cf103ea6"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\build\\bin\\Release\\face_analysis_webview.exe",
+    "sha256": "067548405fbc0d3b6f4a1c4e447eead8c03d0dcf0245b66828a77abc6846956d"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\main.cpp",
+    "sha256": "87b89533c39ab07a398094c7b0ef939d12592a845ce405f496a50a2700262a4b"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\affect_analyzer.cpp",
+    "sha256": "582272441ee828fd94429c4a538b4487e846653cb0f5b2c44ba3df48cd1305f9"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\llm_client.cpp",
+    "sha256": "f37f1d588f5aa82d967462509b830257afecd659503ad382ece75bf3aaba3d1b"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\voice_frontend.cpp",
+    "sha256": "b828845020b50d22a1f65be168a9ca739c638da324b0d10cae2041feb8daf611"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\stt_client.cpp",
+    "sha256": "0192a8742450aece85f6beb282433501e6b61deeaabb7164fd610695a7cd6999"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\src\\text_affect.cpp",
+    "sha256": "ccbf58cc22f1bfeee45cca72074ddf01d4043d869c109e8db5771229c5478db6"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\web\\js\\app.js",
+    "sha256": "cf00c4493cceaec2895b787c691ff85393e9198a63ef61d80e9e31db73725327"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\web\\js\\x.js",
+    "sha256": "598162c8c0ffbebb9ce2cf579cbb6548667cdbd71ff57e6d0f0c333cd7168c12"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\CMakeLists.txt",
+    "sha256": "fadac49b89d1570b760e482b713a1cf7dab5d9a1947265a854f5df303e1d9f7c"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\prompts\\llm_system_prompt.txt",
+    "sha256": "e6aff23b33ca020fd9f9af338c4d33bee019ec62493beebcc789a73f35de779a"
+  },
+  {
+    "path": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\models\\hsemotion\\affectnet_labels.txt",
+    "sha256": "d0415e062a779414c9427655a72e967831a75f721bedf32b9e3faaa52c26db3d"
+  }
+]

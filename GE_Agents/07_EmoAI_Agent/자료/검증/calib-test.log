@@ -1,0 +1,18 @@
+=== 개인 보정 자가진단 ===
+가정: 무표정인데 모델이 화남 38% / 중립 31% 로 읽는 사람
+  무표정   1프레임  표본=1  alpha=0.00  | 원본 Anger 38%  -> 보정 Anger 38%
+  무표정  45프레임  표본=45  alpha=0.00  | 원본 Anger 38%  -> 보정 Anger 38%
+  무표정 150프레임  표본=90  alpha=0.85  | 원본 Anger 38%  -> 보정 Neutral 64%
+  무표정 400프레임  표본=90  alpha=0.85  | 원본 Anger 38%  -> 보정 Neutral 64%
+  실제 화남 30f    표본=90  alpha=0.85  | 원본 Anger 86%  -> 보정 Anger 97%
+  무표정 복귀      표본=90  alpha=0.85  | 원본 Anger 38%  -> 보정 Neutral 64%
+  무표정(공포희박)  표본=90  alpha=0.85  | 원본 Neutral 48%  -> 보정 Neutral 67%
+  웃음 30f         표본=90  alpha=0.85  | 원본 Happiness 72%  -> 보정 Happiness 94%
+  무표정(밝음편향)  표본=90  alpha=0.85  | 원본 Happiness 42%  -> 보정 Neutral 64%
+  그 사람이 웃음  표본=90  alpha=0.85  | 원본 Happiness 70%  -> 보정 Happiness 83%
+  깜빡임 후        표본=90  alpha=0.85  | 원본 Neutral 48%  -> 보정 Neutral 67%
+  3초 눈 감음      표본=90  alpha=0.85  | 원본 Neutral 78%  -> 보정 Neutral 71%
+  깜빡임 -> 슬픔 없음 (OK) / 긴 감김 -> 슬픔 없음 (OK)
+  웃었을 때 -> Happiness  (OK)
+결과: 무표정 -> 평온 (OK) / 실제 화남 -> 화남 유지 (OK) / 복귀 -> 평온 (OK)
+  밝음편향자: 무표정 -> 평온 (OK) / 웃음 -> 밝음 (OK)

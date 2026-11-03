@@ -1,0 +1,464 @@
+{
+  "schema_version": "1.0.0",
+  "jsonschema_version": "4.25.1",
+  "scope": "synthetic contract tests only; no deployed engine/API or cloud calls",
+  "passed": 65,
+  "failed": 0,
+  "cases": [
+    {
+      "case": "audio_missing",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "face_missing",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "normal_voice",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "redacted",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "silence",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "stt_failed",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "unsynced",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "available_null",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "schema:segments/1/measurements/attention/value: None is not of type 'number'"
+    },
+    {
+      "case": "unavailable_zero",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "schema:segments/1/measurements/attention/value: 75 is not of type 'null'"
+    },
+    {
+      "case": "missing_reason",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "schema:segments/1/measurements/attention/reason: 'low_quality' is not of type 'null'"
+    },
+    {
+      "case": "score_outside_range",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "schema:segments/1/measurements/attention/value: 101 is not valid under any of the given schemas"
+    },
+    {
+      "case": "wrong_unit",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "schema:segments/1/measurements/attention/unit: 'score_0_100' was expected"
+    },
+    {
+      "case": "wrong_score_level",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1:attention: wrong score level"
+    },
+    {
+      "case": "valid_samples_exceed_total",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1:attention: invalid sample count/duration"
+    },
+    {
+      "case": "duration_exceeds_segment",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1:attention: invalid sample count/duration"
+    },
+    {
+      "case": "available_without_source",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "schema:segments/1/measurements/attention/source_channels: [] should be non-empty"
+    },
+    {
+      "case": "unknown_method",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: unresolved method not-registered"
+    },
+    {
+      "case": "undeclared_method_channel",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1:attention: undeclared method input"
+    },
+    {
+      "case": "bad_face_count",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: invalid face counts"
+    },
+    {
+      "case": "no_trusted_face",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1:attention: no trusted face evidence"
+    },
+    {
+      "case": "gap_in_recording",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: inconsistent content mapping"
+    },
+    {
+      "case": "overlap_recording",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: inconsistent content mapping"
+    },
+    {
+      "case": "outside_recording",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-2: invalid interval or outside media duration"
+    },
+    {
+      "case": "incorrect_content_time",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1 content: invalid interval or outside media duration"
+    },
+    {
+      "case": "unresolved_time_mapping",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: unresolved mapping"
+    },
+    {
+      "case": "mapping_outside_content",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "mapping: outside content"
+    },
+    {
+      "case": "negative_duration",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "schema:recording/duration_sec: -1 is less than or equal to the minimum of 0"
+    },
+    {
+      "case": "silence_with_pitch",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: silence must have zero speech"
+    },
+    {
+      "case": "speech_without_audio",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "audio_source: absent source must have null id/offset and not_applicable metadata"
+    },
+    {
+      "case": "content_audio_as_participant",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-0: participant audio not confirmed and aligned"
+    },
+    {
+      "case": "external_audio_unknown_sync",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "audio_source: offset/alignment mismatch"
+    },
+    {
+      "case": "audio_overcoverage",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: audio coverage exceeds interval"
+    },
+    {
+      "case": "speech_longer_than_coverage",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: speech exceeds coverage"
+    },
+    {
+      "case": "pitch_zero_unvoiced",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "schema:segments/1/measurements/voice_pitch_hz/value: 0 is not valid under any of the given schemas"
+    },
+    {
+      "case": "no_baseline_for_delta",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "baseline: unavailable baseline has range"
+    },
+    {
+      "case": "baseline_finishes_late",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1:au_delta_AU06: baseline not ready"
+    },
+    {
+      "case": "probabilities_not_normalized",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: emotion probabilities do not sum to one"
+    },
+    {
+      "case": "unresolved_transcript",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: unresolved utterance"
+    },
+    {
+      "case": "timestamp_not_datetime",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "timestamp must be valid ISO8601 with timezone (leap seconds unsupported)"
+    },
+    {
+      "case": "timestamp_without_timezone",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "timestamp must be valid ISO8601 with timezone (leap seconds unsupported)"
+    },
+    {
+      "case": "invalid_calendar_date",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "timestamp must be valid ISO8601 with timezone (leap seconds unsupported)"
+    },
+    {
+      "case": "audio_source_too_short",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-0: audio coverage exceeds source duration/mapping"
+    },
+    {
+      "case": "wrong_STT_provenance",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "utt-1: invalid STT method provenance"
+    },
+    {
+      "case": "peak_outside_event",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "evt-1: peak outside event interval"
+    },
+    {
+      "case": "unresolved_event_evidence",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "evt-1: missing/non-overlapping evidence segment"
+    },
+    {
+      "case": "metric_peak_no_value",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "evt-1: metric peak needs key/value/time"
+    },
+    {
+      "case": "redacted_with_text",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "schema:utterances/0/text: '재미있네요' is not of type 'null'"
+    },
+    {
+      "case": "schema_version_mismatch",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "schema:schema_version: '1.0.0' was expected"
+    },
+    {
+      "case": "duplicate_segment_id",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "segment: duplicate id"
+    },
+    {
+      "case": "unknown_property",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "schema:: Additional properties are not allowed ('tenant_secret' was unexpected)"
+    },
+    {
+      "case": "partial_emotion_vector",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-0: emotion vector must have all seven labels"
+    },
+    {
+      "case": "duplicate_mapping",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "mapping: duplicate id"
+    },
+    {
+      "case": "language_without_speech",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1:voice_pitch_hz: voice metric needs speech"
+    },
+    {
+      "case": "suppress_known_mapping",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: known mapping cannot be suppressed"
+    },
+    {
+      "case": "old_missing_as_zero_defect",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1:attention: no trusted face evidence"
+    },
+    {
+      "case": "stt_failure_is_not_silence",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "seg-1: no_speech requires observed silence"
+    },
+    {
+      "case": "actual_observed_zero_is_valid",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "aligned_external_audio_negative_offset",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "unvoiced_pitch_is_null",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "pause_gap_and_content_replay",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "untimed_STT_is_preserved_without_segment_claim",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "background_audio_is_explicitly_excluded",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "all_channels_missing_keeps_timeline_without_zero_scores",
+      "expected_valid": true,
+      "actual_valid": true,
+      "pass": true,
+      "first_error": null
+    },
+    {
+      "case": "duplicate_json_keys",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "duplicate JSON key: schema_version"
+    },
+    {
+      "case": "nonfinite_json",
+      "expected_valid": false,
+      "actual_valid": false,
+      "pass": true,
+      "first_error": "non-finite JSON constant: NaN"
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "protocolVersion": "0.3.0",
+  "name": "EmoAI Content Reaction Agent",
+  "description": "Analyzes how consenting viewers react to video content (ads, trailers, broadcast clips, training videos). Combines facial expression (FACS action units), voice, and speech cues with a per-person neutral baseline to report emotion, attention, interest, and engagement over time, and answers follow-up questions about specific segments. Not a medical device; not for employee monitoring, hiring, or individual student evaluation.",
+  "url": "https://agent.example-ableai.com/a2a/content-reaction",
+  "preferredTransport": "JSONRPC",
+  "version": "1.0.0",
+  "provider": {
+    "organization": "AbleAI Co., Ltd.",
+    "url": "https://www.example-ableai.com"
+  },
+  "documentationUrl": "https://www.example-ableai.com/emoai/content-reaction-agent/docs",
+  "iconUrl": "https://www.example-ableai.com/emoai/icon.png",
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": true,
+    "stateTransitionHistory": true
+  },
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "description": "OAuth 2.0 authorization code flow. Supports Dynamic Client Registration for Gemini Enterprise.",
+      "flows": {
+        "authorizationCode": {
+          "authorizationUrl": "https://auth.example-ableai.com/oauth2/authorize",
+          "tokenUrl": "https://auth.example-ableai.com/oauth2/token",
+          "scopes": {
+            "analysis:write": "Submit videos for reaction analysis",
+            "analysis:read": "Read analysis results and ask follow-up questions"
+          }
+        }
+      }
+    }
+  },
+  "security": [
+    { "oauth2": ["analysis:write", "analysis:read"] }
+  ],
+  "defaultInputModes": ["video/mp4", "text/plain", "application/json"],
+  "defaultOutputModes": ["application/json", "text/markdown", "text/plain"],
+  "skills": [
+    {
+      "id": "create_viewing_test",
+      "name": "Create a viewing test",
+      "description": "Creates a shareable viewing-test link for a piece of content. Participants give consent, turn on their webcam, and watch; each recording is synced to the content timeline and sent automatically for reaction analysis. Returns the link and live participation status.",
+      "tags": ["remote testing", "webcam", "audience research", "consent"],
+      "examples": [
+        "Create a viewing test for this 30-second ad and send me the link.",
+        "How many participants have completed the trailer test so far?"
+      ],
+      "inputModes": ["video/mp4", "text/plain", "application/json"],
+      "outputModes": ["application/json", "text/markdown"]
+    },
+    {
+      "id": "analyze_content_reaction",
+      "name": "Analyze content reaction",
+      "description": "Analyzes viewer recordings collected through a viewing test, or uploaded recordings of consenting viewers synced to the content timeline, and returns segment-by-segment emotion, attention, interest, and engagement curves, peak and drop-off moments, and a written summary. Each viewer is analyzed against their own neutral-face baseline.",
+      "tags": ["emotion analysis", "content testing", "advertising", "audience research", "engagement"],
+      "examples": [
+        "Analyze how the test audience reacted to this 30-second ad.",
+        "Where did viewers lose interest in this trailer?",
+        "Summarize the emotional peaks in this episode preview."
+      ],
+      "inputModes": ["video/mp4", "application/json"],
+      "outputModes": ["application/json", "text/markdown"]
+    },
+    {
+      "id": "compare_versions",
+      "name": "Compare content versions",
+      "description": "Compares viewer reactions across two or more cuts of the same content (A/B test) and reports which version held attention and drove stronger positive reactions, segment by segment.",
+      "tags": ["A/B test", "ad testing", "creative comparison"],
+      "examples": [
+        "Compare reactions to version A and version B of this ad.",
+        "Which ending kept viewers more engaged?"
+      ],
+      "inputModes": ["video/mp4", "application/json"],
+      "outputModes": ["application/json", "text/markdown"]
+    },
+    {
+      "id": "explain_segment",
+      "name": "Explain a segment",
+      "description": "Answers follow-up questions about a completed analysis, citing the facial action units, voice, and speech cues behind each finding.",
+      "tags": ["Q&A", "explainability", "action units"],
+      "examples": [
+        "Why did engagement drop at 2:30?",
+        "Which scene produced the strongest positive reaction?"
+      ],
+      "inputModes": ["text/plain"],
+      "outputModes": ["text/markdown", "application/json"]
+    }
+  ]
+}

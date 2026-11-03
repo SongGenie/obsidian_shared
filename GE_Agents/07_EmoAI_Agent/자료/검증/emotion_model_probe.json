@@ -1,0 +1,24 @@
+{
+  "scope": "synthetic gray image, local CPU only, different OpenCV runtime from shipped executable",
+  "opencv_version": "4.13.0",
+  "model": "C:\\ableai\\XR_workspace\\Meta Glass\\exhibition\\FaceAnalysisWebView\\models\\hsemotion\\emotions_mobilenet.tflite",
+  "model_sha256": "6b5d1f895253c480e5db7cac290703d3639d4f97cc84de87c205dfc7c49d5734",
+  "labels": [
+    "0:Anger",
+    "1:Disgust",
+    "2:Fear",
+    "3:Happiness",
+    "4:Neutral",
+    "5:Sadness",
+    "6:Surprise"
+  ],
+  "load_seconds": 0.0744,
+  "forward_seconds": 0.0423,
+  "output_shape": [
+    1,
+    7
+  ],
+  "output_finite": true,
+  "output_count": 7,
+  "status": "pass"
+}

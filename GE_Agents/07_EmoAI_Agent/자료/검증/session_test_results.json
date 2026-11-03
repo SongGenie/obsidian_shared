@@ -1,0 +1,103 @@
+{
+  "checks": [
+    {
+      "check": "inactive session has no summary",
+      "pass": true
+    },
+    {
+      "check": "zero frame session has no summary",
+      "pass": true
+    },
+    {
+      "check": "empty finish closes session",
+      "pass": true
+    },
+    {
+      "check": "discard closes without summary",
+      "pass": true
+    },
+    {
+      "check": "normal summary generated",
+      "pass": true
+    },
+    {
+      "check": "frame count includes detected and missing",
+      "pass": true
+    },
+    {
+      "check": "detection denominator is all frames",
+      "pass": true
+    },
+    {
+      "check": "reliability denominator is detected frames",
+      "pass": true
+    },
+    {
+      "check": "unreliable samples excluded from average",
+      "pass": true
+    },
+    {
+      "check": "score 60 classified moderate",
+      "pass": true
+    },
+    {
+      "check": "bucket first/second half trend rising",
+      "pass": true
+    },
+    {
+      "check": "trend uses bucket halves rather than endpoints",
+      "pass": true
+    },
+    {
+      "check": "AU mean uses trusted frames",
+      "pass": true
+    },
+    {
+      "check": "AU peak preserved",
+      "pass": true
+    },
+    {
+      "check": "emotion distribution counts bucket winners",
+      "pass": true
+    },
+    {
+      "check": "timeline contains emotion transitions only",
+      "pass": true
+    },
+    {
+      "check": "final transcript included",
+      "pass": true
+    },
+    {
+      "check": "guidance removed only from LLM payload",
+      "pass": true
+    },
+    {
+      "check": "LLM payload omits full timeline voice raw and landmarks",
+      "pass": true
+    },
+    {
+      "check": "second finish does not replay stored result",
+      "pass": true
+    },
+    {
+      "check": "unreliable-only confidence insufficient",
+      "pass": true
+    },
+    {
+      "check": "current gap: no trusted data serialized as zero/low",
+      "pass": true
+    },
+    {
+      "check": "active start reports restart",
+      "pass": true
+    },
+    {
+      "check": "restart drops previous samples",
+      "pass": true
+    }
+  ],
+  "failed": 0,
+  "passed": 24,
+  "scope": "Original C++ session aggregation with synthetic metrics; no inference or network"
+}

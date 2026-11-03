@@ -1,0 +1,1017 @@
+{
+  "schema_version": "1.0.0",
+  "data_origin": "synthetic",
+  "analysis_id": "analysis-demo-1",
+  "test_id": "test-demo-1",
+  "participant_id": "participant-demo-1",
+  "generated_at": "2026-10-23T18:00:00+09:00",
+  "recording": {
+    "id": "recording-demo-1",
+    "duration_sec": 3
+  },
+  "content": {
+    "id": "content-demo-1",
+    "version": "A",
+    "duration_sec": 30
+  },
+  "audio_source": {
+    "id": "audio-demo-1",
+    "duration_sec": 3,
+    "origin": "recording_track",
+    "attribution": "participant_confirmed",
+    "alignment_status": "aligned",
+    "offset_to_recording_sec": 0
+  },
+  "baseline": {
+    "status": "captured",
+    "recording": {
+      "start_sec": 0,
+      "end_sec": 1
+    }
+  },
+  "methods": {
+    "score-v1": {
+      "kind": "heuristic",
+      "version": "synthetic-example-1",
+      "model_ref": null,
+      "source_channels": [
+        "face_model",
+        "face_au"
+      ],
+      "sample_unit": "video_frame"
+    },
+    "fusion-v1": {
+      "kind": "heuristic",
+      "version": "synthetic-example-1",
+      "model_ref": null,
+      "source_channels": [
+        "face_model",
+        "face_au",
+        "voice",
+        "language"
+      ],
+      "sample_unit": "video_frame"
+    },
+    "au-v1": {
+      "kind": "model_inference",
+      "version": "synthetic-example-1",
+      "model_ref": "synthetic-au-model",
+      "source_channels": [
+        "face_au"
+      ],
+      "sample_unit": "video_frame"
+    },
+    "voice-v1": {
+      "kind": "signal_processing",
+      "version": "synthetic-example-1",
+      "model_ref": null,
+      "source_channels": [
+        "voice"
+      ],
+      "sample_unit": "audio_frame"
+    },
+    "lexicon-v1": {
+      "kind": "lexicon",
+      "version": "synthetic-example-1",
+      "model_ref": null,
+      "source_channels": [
+        "language"
+      ],
+      "sample_unit": "utterance"
+    },
+    "stt-v1": {
+      "kind": "model_inference",
+      "version": "synthetic-example-1",
+      "model_ref": "synthetic-stt-model",
+      "source_channels": [
+        "voice"
+      ],
+      "sample_unit": "utterance"
+    }
+  },
+  "content_mappings": [
+    {
+      "id": "map-1",
+      "recording": {
+        "start_sec": 0,
+        "end_sec": 3
+      },
+      "content_start_sec": 5,
+      "uncertainty_sec": 0.04,
+      "method": "manual_verified"
+    }
+  ],
+  "segments": [
+    {
+      "id": "seg-0",
+      "timing": {
+        "recording": {
+          "start_sec": 0,
+          "end_sec": 1
+        },
+        "content": {
+          "start_sec": 5,
+          "end_sec": 6
+        },
+        "mapping_id": "map-1"
+      },
+      "face_quality": {
+        "total_frames": 30,
+        "detected_frames": 28,
+        "trusted_frames": 20
+      },
+      "audio": {
+        "state": "silence",
+        "reason": null,
+        "coverage_duration_sec": 1,
+        "speech_duration_sec": 0
+      },
+      "transcript": {
+        "state": "no_speech",
+        "reason": "no_speech",
+        "utterance_ids": []
+      },
+      "measurements": {
+        "attention": {
+          "status": "available",
+          "value": 75,
+          "unit": "score_0_100",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "score-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": "high"
+        },
+        "interest": {
+          "status": "available",
+          "value": 60,
+          "unit": "score_0_100",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "score-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": "moderate"
+        },
+        "engagement": {
+          "status": "available",
+          "value": 62,
+          "unit": "score_0_100",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "score-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": "moderate"
+        },
+        "tension": {
+          "status": "available",
+          "value": 20,
+          "unit": "score_0_100",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "score-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": "low"
+        },
+        "valence": {
+          "status": "available",
+          "value": 0.2,
+          "unit": "normalized",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "arousal": {
+          "status": "available",
+          "value": 0.1,
+          "unit": "normalized",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "voice_pitch_hz": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "Hz",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 32,
+          "valid_duration_sec": 0,
+          "method_id": "voice-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "voice_energy_dbfs": {
+          "status": "available",
+          "value": -70,
+          "unit": "dBFS",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 32,
+          "valid_duration_sec": 0.6,
+          "method_id": "voice-v1",
+          "source_channels": [
+            "voice"
+          ],
+          "level": null
+        },
+        "voice_rate_sps": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "syllables_per_sec",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 32,
+          "valid_duration_sec": 0,
+          "method_id": "voice-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "language_valence": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "normalized",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 0,
+          "valid_duration_sec": 0,
+          "method_id": "lexicon-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "language_arousal": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "normalized",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 0,
+          "valid_duration_sec": 0,
+          "method_id": "lexicon-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "au_raw_AU06": {
+          "status": "available",
+          "value": 0.8,
+          "unit": "AU_0_5",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "au-v1",
+          "source_channels": [
+            "face_au"
+          ],
+          "level": null
+        },
+        "au_delta_AU06": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "AU_0_5",
+          "reason": "baseline_not_ready",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "au-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "emotion_Anger": {
+          "status": "available",
+          "value": 0,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Disgust": {
+          "status": "available",
+          "value": 0,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Fear": {
+          "status": "available",
+          "value": 0,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Happiness": {
+          "status": "available",
+          "value": 0.4,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Neutral": {
+          "status": "available",
+          "value": 0.6,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Sadness": {
+          "status": "available",
+          "value": 0,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Surprise": {
+          "status": "available",
+          "value": 0,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        }
+      }
+    },
+    {
+      "id": "seg-1",
+      "timing": {
+        "recording": {
+          "start_sec": 1,
+          "end_sec": 2
+        },
+        "content": {
+          "start_sec": 6,
+          "end_sec": 7
+        },
+        "mapping_id": "map-1"
+      },
+      "face_quality": {
+        "total_frames": 30,
+        "detected_frames": 20,
+        "trusted_frames": 0
+      },
+      "audio": {
+        "state": "silence",
+        "reason": null,
+        "coverage_duration_sec": 1,
+        "speech_duration_sec": 0
+      },
+      "transcript": {
+        "state": "no_speech",
+        "reason": "no_speech",
+        "utterance_ids": []
+      },
+      "measurements": {
+        "attention": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "score_0_100",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "score-v1",
+          "source_channels": [],
+          "level": "unavailable"
+        },
+        "interest": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "score_0_100",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "score-v1",
+          "source_channels": [],
+          "level": "unavailable"
+        },
+        "engagement": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "score_0_100",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "score-v1",
+          "source_channels": [],
+          "level": "unavailable"
+        },
+        "tension": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "score_0_100",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "score-v1",
+          "source_channels": [],
+          "level": "unavailable"
+        },
+        "valence": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "normalized",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "fusion-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "arousal": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "normalized",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "fusion-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "voice_pitch_hz": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "Hz",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 32,
+          "valid_duration_sec": 0,
+          "method_id": "voice-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "voice_energy_dbfs": {
+          "status": "available",
+          "value": -24,
+          "unit": "dBFS",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 32,
+          "valid_duration_sec": 0.6,
+          "method_id": "voice-v1",
+          "source_channels": [
+            "voice"
+          ],
+          "level": null
+        },
+        "voice_rate_sps": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "syllables_per_sec",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 32,
+          "valid_duration_sec": 0,
+          "method_id": "voice-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "language_valence": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "normalized",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 0,
+          "valid_duration_sec": 0,
+          "method_id": "lexicon-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "language_arousal": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "normalized",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 0,
+          "valid_duration_sec": 0,
+          "method_id": "lexicon-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "au_raw_AU06": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "AU_0_5",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "au-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "au_delta_AU06": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "AU_0_5",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "au-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "emotion_Anger": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "probability",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "fusion-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "emotion_Disgust": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "probability",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "fusion-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "emotion_Fear": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "probability",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "fusion-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "emotion_Happiness": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "probability",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "fusion-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "emotion_Neutral": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "probability",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "fusion-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "emotion_Sadness": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "probability",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "fusion-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "emotion_Surprise": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "probability",
+          "reason": "low_quality",
+          "valid_samples": 0,
+          "total_samples": 30,
+          "valid_duration_sec": 0,
+          "method_id": "fusion-v1",
+          "source_channels": [],
+          "level": null
+        }
+      }
+    },
+    {
+      "id": "seg-2",
+      "timing": {
+        "recording": {
+          "start_sec": 2,
+          "end_sec": 3
+        },
+        "content": {
+          "start_sec": 7,
+          "end_sec": 8
+        },
+        "mapping_id": "map-1"
+      },
+      "face_quality": {
+        "total_frames": 30,
+        "detected_frames": 28,
+        "trusted_frames": 20
+      },
+      "audio": {
+        "state": "silence",
+        "reason": null,
+        "coverage_duration_sec": 1,
+        "speech_duration_sec": 0
+      },
+      "transcript": {
+        "state": "no_speech",
+        "reason": "no_speech",
+        "utterance_ids": []
+      },
+      "measurements": {
+        "attention": {
+          "status": "available",
+          "value": 75,
+          "unit": "score_0_100",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "score-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": "high"
+        },
+        "interest": {
+          "status": "available",
+          "value": 60,
+          "unit": "score_0_100",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "score-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": "moderate"
+        },
+        "engagement": {
+          "status": "available",
+          "value": 62,
+          "unit": "score_0_100",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "score-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": "moderate"
+        },
+        "tension": {
+          "status": "available",
+          "value": 20,
+          "unit": "score_0_100",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "score-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": "low"
+        },
+        "valence": {
+          "status": "available",
+          "value": 0.2,
+          "unit": "normalized",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "arousal": {
+          "status": "available",
+          "value": 0.1,
+          "unit": "normalized",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "voice_pitch_hz": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "Hz",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 32,
+          "valid_duration_sec": 0,
+          "method_id": "voice-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "voice_energy_dbfs": {
+          "status": "available",
+          "value": -70,
+          "unit": "dBFS",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 32,
+          "valid_duration_sec": 0.6,
+          "method_id": "voice-v1",
+          "source_channels": [
+            "voice"
+          ],
+          "level": null
+        },
+        "voice_rate_sps": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "syllables_per_sec",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 32,
+          "valid_duration_sec": 0,
+          "method_id": "voice-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "language_valence": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "normalized",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 0,
+          "valid_duration_sec": 0,
+          "method_id": "lexicon-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "language_arousal": {
+          "status": "unavailable",
+          "value": null,
+          "unit": "normalized",
+          "reason": "no_speech",
+          "valid_samples": 0,
+          "total_samples": 0,
+          "valid_duration_sec": 0,
+          "method_id": "lexicon-v1",
+          "source_channels": [],
+          "level": null
+        },
+        "au_raw_AU06": {
+          "status": "available",
+          "value": 0.8,
+          "unit": "AU_0_5",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "au-v1",
+          "source_channels": [
+            "face_au"
+          ],
+          "level": null
+        },
+        "au_delta_AU06": {
+          "status": "available",
+          "value": 0.3,
+          "unit": "AU_0_5",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "au-v1",
+          "source_channels": [
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Anger": {
+          "status": "available",
+          "value": 0,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Disgust": {
+          "status": "available",
+          "value": 0,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Fear": {
+          "status": "available",
+          "value": 0,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Happiness": {
+          "status": "available",
+          "value": 0.4,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Neutral": {
+          "status": "available",
+          "value": 0.6,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Sadness": {
+          "status": "available",
+          "value": 0,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        },
+        "emotion_Surprise": {
+          "status": "available",
+          "value": 0,
+          "unit": "probability",
+          "reason": null,
+          "valid_samples": 20,
+          "total_samples": 30,
+          "valid_duration_sec": 0.8,
+          "method_id": "fusion-v1",
+          "source_channels": [
+            "face_model",
+            "face_au"
+          ],
+          "level": null
+        }
+      }
+    }
+  ],
+  "utterances": [],
+  "events": [],
+  "limitations": [
+    "Synthetic contract fixture; no measured human reaction."
+  ]
+}

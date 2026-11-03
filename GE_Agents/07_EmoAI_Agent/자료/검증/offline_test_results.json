@@ -1,0 +1,23 @@
+[
+  {
+    "flag": "--voice-test",
+    "exit_code": 0,
+    "elapsed_seconds": 0.203,
+    "log": "voice-test.log",
+    "output": "=== 음성 전처리 자가진단 ===\n  조용함 5s           레벨  -61.2  바닥  -61.5  임계  -46.5  게이트 닫힘  F0     0Hz  통과율   0%\n  시끄러운 배경 8s 레벨  -31.3  바닥  -31.7  임계  -16.7  게이트 닫힘  F0     0Hz  통과율  37%\n  배경+근접발화 4s 레벨  -16.4  바닥  -31.6  임계  -16.6  게이트 열림  F0   140Hz  통과율  82%\n  발화 끝, 배경만 4s 레벨  -31.1  바닥  -31.6  임계  -16.6  게이트 닫힘  F0     0Hz  통과율   6%\n결과: 근접 발화 F0 = 140.351 Hz (정답 140Hz) -> OK"
+  },
+  {
+    "flag": "--calib-test",
+    "exit_code": 0,
+    "elapsed_seconds": 0.072,
+    "log": "calib-test.log",
+    "output": "=== 개인 보정 자가진단 ===\n가정: 무표정인데 모델이 화남 38% / 중립 31% 로 읽는 사람\n  무표정   1프레임  표본=1  alpha=0.00  | 원본 Anger 38%  -> 보정 Anger 38%\n  무표정  45프레임  표본=45  alpha=0.00  | 원본 Anger 38%  -> 보정 Anger 38%\n  무표정 150프레임  표본=90  alpha=0.85  | 원본 Anger 38%  -> 보정 Neutral 64%\n  무표정 400프레임  표본=90  alpha=0.85  | 원본 Anger 38%  -> 보정 Neutral 64%\n  실제 화남 30f    표본=90  alpha=0.85  | 원본 Anger 86%  -> 보정 Anger 97%\n  무표정 복귀      표본=90  alpha=0.85  | 원본 Anger 38%  -> 보정 Neutral 64%\n  무표정(공포희박)  표본=90  alpha=0.85  | 원본 Neutral 48%  -> 보정 Neutral 67%\n  웃음 30f         표본=90  alpha=0.85  | 원본 Happiness 72%  -> 보정 Happiness 94%\n  무표정(밝음편향)  표본=90  alpha=0.85  | 원본 Happiness 42%  -> 보정 Neutral 64%\n  그 사람이 웃음  표본=90  alpha=0.85  | 원본 Happiness 70%  -> 보정 Happiness 83%\n  깜빡임 후        표본=90  alpha=0.85  | 원본 Neutral 48%  -> 보정 Neutral 67%\n  3초 눈 감음      표본=90  alpha=0.85  | 원본 Neutral 78%  -> 보정 Neutral 71%\n  깜빡임 -> 슬픔 없음 (OK) / 긴 감김 -> 슬픔 없음 (OK)\n  웃었을 때 -> Happiness  (OK)\n결과: 무표정 -> 평온 (OK) / 실제 화남 -> 화남 유지 (OK) / 복귀 -> 평온 (OK)\n  밝음편향자: 무표정 -> 평온 (OK) / 웃음 -> 밝음 (OK)"
+  },
+  {
+    "flag": "--fusion-test",
+    "exit_code": 0,
+    "elapsed_seconds": 3.835,
+    "log": "fusion-test.log",
+    "output": "=== 4채널 융합 자가진단 ===\n  무표정(보정 후)      -> 최종 Neutral 88%  근육근거 1.00  V -0.04  주석 ''\n  [OK]   무표정 -> 평온\n  웃음(모델+근육 일치) -> 최종 Happiness 95%  근육근거 1.00  V 0.73  주석 ''\n  [OK]   모델·근육 모두 웃음 -> 밝음, 근육 근거 높음\n  입 다문 미소         -> 최종 Happiness 96%  근육근거 1.00  V 0.73  주석 ''\n  [OK]   입 다문 미소 -> 밝음, 근육 근거 '강함'(입술 벌림 필수 아님)\n  한쪽 입꼬리만        -> 최종 Happiness 88%  근육근거 0.50  V 0.73  주석 'one_sided_smile'\n  [OK]   한쪽 입꼬리만 -> '한쪽 웃음' 주석\n  [OK]   한쪽 웃음 -> 밝음의 근육 근거 낮아짐\n  모델만 웃음(근육 X)  -> 최종 Neutral 49%  근육근거 1.00  V 0.40  주석 'muscle_weak'\n  [OK]   모델은 밝음인데 근육 움직임 없음 -> 불일치 주석\n  [OK]   근육이 뒷받침하지 않으면 최종 확신이 낮아짐\n  무표정 + 부정 발화   -> 최종 Neutral 70%  근육근거 1.00  V -0.31  주석 ''\n  [OK]   부정적인 말 -> 유인가가 부정 쪽으로 이동\n  말하는 중(입 움직임) -> 최종 Neutral 87%  근육근거 1.00  V -0.04  주석 'speaking'\n  [OK]   말할 때 입 주변 AU 제외 -> 놀람/공포로 오인하지 않음\n  순간 찌푸림 0.2초 -> 감지 1회 (미간 찌푸림)\n  [OK]   0.2초 찌푸림 -> 순간 표정 변화 1회\n  [OK]   1.5초 유지된 찌푸림 -> 순간 변화로 세지 않음\n  [OK]   보정 전 -> 순간 변화 감지 안 함\n전체 통과 0"
+  }
+]
